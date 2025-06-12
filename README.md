@@ -349,3 +349,76 @@ The implementation demonstrates production-ready deep learning practices with pr
 - **CIFAR-10**  
   **Language**: Python (PyTorch, Torchvision)  
   Used a CNN model for multi-class classification to categorize images into one of the 10 categories in the CIFAR-10 dataset.
+
+  # 📦 CIFAR-10 Image Classifier using PyTorch
+
+This project implements a Convolutional Neural Network (CNN) using PyTorch to classify images from the CIFAR-10 dataset. The dataset consists of 60,000 32x32 color images in 10 different classes, split into 50,000 training images and 10,000 test images.
+
+---
+
+## 🗂️ Dataset Description
+
+The data is stored in the folder:  
+`D:\wids '23\Winter-Projects-of-Machine-Learning\cifar-10-batches-py`
+
+### Files:
+- `data_batch_1` to `data_batch_5`: Training data
+- `test_batch`: Test data
+- `batches.meta`: Contains class label names
+- `readme`: Dataset description
+
+Each batch is a Python `pickle` file containing a dictionary with:
+- `'data'`: image data, shape `(10000, 3072)`  
+- `'labels'`: list of image labels  
+- `'filenames'`: image file names
+
+---
+
+## 🧠 Model Architecture
+
+A simple CNN is implemented with:
+- 2 Convolutional layers:
+  - `Conv2d(3, 6, 5)` → ReLU → MaxPool(2x2)
+  - `Conv2d(6, 16, 5)` → ReLU → MaxPool(2x2)
+- 3 Fully connected layers:
+  - `Linear(400, 120)` → ReLU
+  - `Linear(120, 84)` → ReLU
+  - `Linear(84, 10)` (for 10 classes)
+
+---
+
+## 🧪 Training Setup
+
+- **Epochs:** 5  
+- **Batch Size:** 4  
+- **Optimizer:** SGD  
+- **Loss Function:** CrossEntropyLoss  
+- **Learning Rate:** 0.001  
+- **Device:** GPU if available, else CPU  
+
+---
+
+## 🧰 Dependencies
+
+Install using pip:
+
+```bash
+pip install torch torchvision matplotlib
+
+```
+'plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck'
+```
+Accuracy of the network: 52.3 %
+Accuracy of plane: 60.7 %
+Accuracy of car: 64.2 %
+Accuracy of bird: 41.2 %
+Accuracy of cat: 30.6 %
+Accuracy of deer: 48.4 %
+Accuracy of dog: 37.5 %
+Accuracy of frog: 44.7 %
+Accuracy of horse: 59.8 %
+Accuracy of ship: 77.8 %
+Accuracy of truck: 47.6 %
+
+
+
