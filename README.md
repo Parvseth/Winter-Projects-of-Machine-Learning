@@ -66,6 +66,61 @@ Mean Accuracy: 0.8547 ± 0.0124
 | 10   | Diabetes          | Low        |
 
 
+Install dependencies :
+```
+pip install numpy pandas matplotlib seaborn scikit-learn
+```
+Configuration : 
+```
+model_params = {
+    'learning_rate': 0.01,
+    'max_iterations': 2000,
+    'regularization': 'l2',
+    'lambda_reg': 0.01,
+    'tolerance': 1e-6
+}
+```
+## 🏥 Clinical Significance
+
+- **Preventive Screening**: Early detection of high-risk patients  
+- **Cost-Efficiency**: Targeted healthcare intervention  
+- **Transparent AI**: Interpretability for doctors  
+- **Alignment with Literature**: Feature influence matches medical research  
+
+---
+
+## 📈 Advanced Features
+
+### 🧠 Data Science Excellence
+- Stratified Cross-Validation  
+- Missing Value Imputation  
+- Feature Standardization  
+- L1/L2 Regularization  
+
+### 📊 Professional Evaluation
+- ROC-AUC Curves  
+- Confusion Matrices  
+- Feature Importance Visuals  
+- F1, Recall, Precision metrics  
+
+### ⚙️ Production-Ready Code
+- Modular design  
+- Logging and configuration  
+- Ready for REST API wrapping  
+- Reproducible training  
+
+---
+
+## 🔮 Future Enhancements
+
+- 🔍 Hyperparameter Tuning (Grid/Bayesian search)  
+- 🌐 REST API & Web UI for Deployment  
+- 🧠 Ensemble Methods (XGBoost, Random Forest)  
+- 📉 Precision-Recall Curves for better imbalance handling  
+- 📦 Model Persistence & Loading  
+
+
+
 - **Week 3**  
   **Language**: Python (PyTorch)  
   Built a model to categorize handwritten digits using the MNIST dataset.
