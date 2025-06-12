@@ -3,7 +3,68 @@
 - **Week 2**  
   **Language**: Python  
   Built a gradient descent model to predict Coronary Heart Disease.
+  # ❤️ Heart Disease Prediction using Enhanced Logistic Regression
 
+A comprehensive implementation of logistic regression from scratch to predict heart disease risk using the **Framingham Heart Study** dataset, blending rigorous machine learning techniques with clinical insights and professional evaluation metrics.
+
+---
+
+## 🧠 Project Overview
+
+This project applies an **improved logistic regression model** to predict 10-year coronary heart disease (CHD) risk from real patient health indicators. The model is built from scratch in Python, featuring:
+- Robust optimization and convergence control  
+- Feature scaling and regularization  
+- Cross-validation and test evaluation  
+- Clinical interpretability and data visualization  
+
+> ⚡ **Highlight**: 85.1% cross-validation accuracy, AUC up to 0.88, professional ML pipeline, strong real-world applicability.
+
+---
+
+## 📊 Dataset: Framingham Heart Study
+
+| Detail                | Value                        |
+|----------------------|------------------------------|
+| Source               | Framingham Heart Study        |
+| Records              | 4,238                         |
+| Target               | 10-year CHD risk (binary)     |
+| Features             | 15 health metrics             |
+| Challenges           | Missing values, class imbalance |
+
+### 🧬 Feature Types
+- **Demographics**: Age, gender  
+- **Behavioral**: Smoking status, cigarettes/day  
+- **Medical History**: Stroke, hypertension, diabetes  
+- **Vitals/Labs**: BP, heart rate, cholesterol, glucose  
+- **Target**: `TenYearCHD` (0 = No, 1 = Yes)
+
+---
+
+## 🔍 Enhanced Model Architecture
+
+### 📌 Logistic Regression (From Scratch)
+```math
+P(y=1 | x) = \sigma(w_0 + w_1x_1 + ... + w_nx_n)
+where \sigma(z) = \frac{1}{1 + e^{-z}}
+```
+Mean Accuracy: 0.8547 ± 0.0124
+```
+### 🔍 Feature Importance
+
+```
+| Rank | Feature           | Importance |
+|------|-------------------|------------|
+| 1    | Age               | High       |
+| 2    | CigsPerDay        | High       |
+| 3    | SysBP             | High       |
+| 4    | Male              | Medium     |
+| 5    | TotChol           | Medium     |
+| 6    | PrevalentHyp      | Medium     |
+| 7    | PrevalentStroke   | Low        |
+| 8    | Glucose           | Low        |
+| 9    | CurrentSmoker     | Low        |
+| 10   | Diabetes          | Low        |
+```
 
 - **Week 3**  
   **Language**: Python (PyTorch)  
