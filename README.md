@@ -64,7 +64,7 @@ Mean Accuracy: 0.8547 ± 0.0124
 | 8    | Glucose           | Low        |
 | 9    | CurrentSmoker     | Low        |
 | 10   | Diabetes          | Low        |
-```
+
 
 - **Week 3**  
   **Language**: Python (PyTorch)  
